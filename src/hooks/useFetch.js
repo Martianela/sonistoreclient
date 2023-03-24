@@ -8,7 +8,7 @@ const useFetch = (url) => {
     const fetchData = async () => {
       setIsLoading(true);
       const res = await makeRequest.get(url);
-      //console.log(res);
+
       setData(res.data.data);
       try {
       } catch (error) {
